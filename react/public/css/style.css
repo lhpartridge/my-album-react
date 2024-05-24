@@ -1,0 +1,136 @@
+:root {
+    --big: "Big Shoulders Inline Text", sans-serif;
+    --poiret:"Poiret One", sans-serif;
+    --overlock: "Overlock SC", sans-serif;
+    --monoton: "Monoton", sans-serif;
+    --mplus: "M PLUS 1p", sans-serif;
+    --palegreen: rgb(243, 248, 237);
+    --ltgreen: rgb(207, 236, 226);
+    --dkgreen: rgb(20, 95, 70);
+    --dkrgreen: rgb(11, 53, 39);
+    --orange: rgb(195, 93, 34);
+    --charcoal: rgb(47, 44, 44);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--ltgreen);
+}
+
+header {
+    padding: 60px 0;
+    height: 100px;
+    background-color: var(--dkgreen);
+}
+
+main {
+    padding: 20px 0;
+    font-family: cursive;
+}
+
+footer {
+    height: 100px;
+    padding: 40px 0;
+    background-color: var(--dkrgreen);
+}
+
+#bandSingleMain, #artistSingleMain, #artistMain {
+    /* background-color: green; */
+    font-family: var(--mplus);
+}
+
+h1 {
+    font-size: 2.4em;
+    font-family: var(--monoton);
+    color: white;
+}
+
+.subheading {
+    font-size: 2.4em;
+    font-family: var(--overlock);
+}
+
+.heading, .top-nav-link {
+    font-family: var(--poiret);
+    font-weight: bold;
+    color: var(--palegreen);
+}
+
+nav, link {
+    color: white;
+}
+
+a {
+    text-decoration-color: var(--dkrgreen);
+}
+
+.top-nav-link {
+    font-size: 1.6em;
+}
+
+.top-nav-link:hover {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.figure-caption, .album-caption, .artist-caption, .band-caption, .label-caption, .prev-link, .next-link, .aside-item  {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* font-size: 1.5em; */
+    font-family: var(--overlock);
+    color: var(--dkgreen);
+}
+
+.figure-caption:hover, .album-caption:hover, .artist-caption:hover, .band-caption:hover, .label-caption:hover, .prev-link:hover, .next-link:hover, .aside-item:hover {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.artist-text, .band-text, .error-text {
+    font-size: 1.4em;
+    font-family: var(--mplus);
+    color: var(--dkgreen);
+}
+
+.home-album {
+    max-width: 60%;
+}
+
+.album-cover-single, .artist-image {
+    max-height: 50%;
+}
+
+.list-group-item, .label-item {
+    background-color: var(--palegreen);
+    font-size: 1.5em;
+    font-family: var(--overlock);
+    color: var(--dkgreen);
+}
+
+#formMain {
+    padding: 20px 10px;
+}
+
+.colophon {
+    display: block;
+    text-align: center;
+    align-content: center;
+    font-size: 1.2em;
+    font-family: var(--poiret);
+    color: var(--dkrgreen);
+}
+
+.copyright {
+    font-weight: 700;
+}
+
+#crowIcon {
+    margin: 10px;
+    max-width: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
